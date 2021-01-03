@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Salary Prediction</title>
+</head>
+<body>
+    <div class="form">
+        <h1><a href="http://127.0.0.1:5000/">Salary Prediction</a></h1>
+      
+        <form action="/predict" method="POST">
+            <input type="text" name="name" placeholder="Enter name">
+            <input type="text" name="exp" placeholder="Enter your experience (years)">
+            <input type="submit" name="submit" value="Predict Salary" class="btn">
+        </form>    
+        
+        <h2>{{pred}}</h2>
+    </div>
+
+    <script></script>
+
+</body>
+</html>
